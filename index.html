@@ -11,72 +11,215 @@
   <!--
     ============================================================
     SUZA Web Technologies — Practical Test
-    Student Name      : [WRITE YOUR FULL NAME]
-    Registration No.  : [WRITE YOUR REG NUMBER]
-    Question Number   : Q[XXX]
-    Question Title    : [PASTE YOUR ASSIGNED QUESTION TITLE]
+    Student Name      : SUMAYYAH SALUM ALI
+    Registration No.  : 24BIT040
+    Question Number   : Q077
+    Question Title    : Company History Timeline
 
-    YOUR TASK (paste from QUESTIONS.docx):
-    [PASTE THE FULL TASK DESCRIPTION FROM THE QUESTIONS DOCUMENT]
-
-    REQUIREMENTS FOR EVERY QUESTION:
-    1. Use semantic HTML5 (header, main, footer, section, article where appropriate).
-    2. Style everything in styles.css — NO inline styles, NO <style> tag.
-    3. Use Flexbox or CSS Grid for layout (whichever fits your component).
-    4. Include AT LEAST 2 images (use /assets/images/ or your own).
-    5. Include AT LEAST 2 working links (internal or external).
-    6. Add hover effects on interactive elements (links, buttons).
-    7. The page must look reasonable on mobile (add one media query).
-    8. No JavaScript required (HTML + CSS only).
+    YOUR TASK 
+Build a COMPANY HISTORY TIMELINE. Display 5 milestone events in a vertical timeline with a centre line and 
+alternating left/right entries. Each entry has a year, event title, image, and description. Build the page with 
+valid HTML5 (DOCTYPE, lang, charset, viewport, page title) using semantic elements (header, main, footer, 
+and section/article/nav where they fit). Put all styles in styles.css — NO inline style attributes and NO <style> 
+tags in the HTML. Use Flexbox or CSS Grid for the layout. Include at least 2 images (each with descriptive alt 
+text — you may use the SVGs in assets/images/ or upload your own under that folder) and at least 2 working 
+links, where at least one is an external link that opens in a new tab with rel="noopener noreferrer". Define 
+your colours using CSS variables (custom properties). Add hover effects on interactive elements (links, 
+buttons, cards). Add at least one @media query so the page still works on a 375px-wide phone screen. Write 
+your full name, registration number, and question number in the top comment of both files and in the page 
+footer. Do NOT use JavaScript and do NOT use any CSS framework (Bootstrap, Tailwind, etc.) — pure HTML + 
+CSS only
     ============================================================
   -->
 
-  <header class="page-header">
-    <img src="assets/images/logo.svg" alt="SUZA logo" class="logo" width="56" height="56" />
-    <div>
-      <h1>Web Technologies — Practical Test</h1>
-      <p class="subtitle">State University of Zanzibar · SCCMS</p>
-    </div>
-  </header>
+  
+    <header>
 
-  <main>
-    <!-- ============================================================
-         REPLACE EVERYTHING INSIDE <main> WITH YOUR SOLUTION
-         ============================================================ -->
+        <div class="container">
 
-    <section class="solution">
-      <h2>Your Solution Goes Here</h2>
-      <p>
-        Delete this placeholder and build the component described in your
-        assigned question. Remember: at least <strong>2 images</strong> and
-        <strong>2 links</strong>.
-      </p>
+            <h1>BlueTech Company History</h1>
 
-      <img src="assets/images/banner.svg" alt="Sample banner — replace with your own content" />
+            <nav>
+                <ul>
+                    <li><a href="Timeline.html">Timeline</a></li>
 
-      <p>
-        Helpful reference:
-        <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">
-          MDN Web Docs
-        </a>
-        ·
-        <a href="https://massoudhamad.github.io/web-technologies/index.html" target="_blank" rel="noopener noreferrer">
-          Course site
-        </a>
-      </p>
-    </section>
+                    <li>
+                        <a href="https://www.suza.ac.tz/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        SUZA
+                        </a>
+                    </li>
 
-  </main>
+                    <li>
+                        <a href="https://www.w3schools.com/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        W3Schools
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
+        </div>
+
+    </header>
+
+
+  <main class="container">
+
+       
+
+        <section class="intro">
+
+            <article class="intro-card">
+
+                <img
+                src="./assets/images/hobbieee.png"
+                alt="Modern technology company office building">
+
+                <h2>Our Journey</h2>
+
+                <p>
+                    Explore the major milestones and achievements
+                    that shaped BlueTech into a leading technology company.
+                </p>
+
+            </article>
+
+        </section>
+
+        
+
+        <section id="timeline" class="timeline">
+
+           
+
+            <article class="timeline-item left">
+
+                <div class="content">
+
+                    <img
+                    src="./assets/images/hobbieee.png"
+                    alt="Startup team launching a new technology company">
+
+                    <h2>2018</h2>
+
+                    <h3>Company Founded</h3>
+
+                    <p>
+                        BlueTech Solutions was founded by a small team
+                        of software developers with a passion for innovation.
+                    </p>
+
+                </div>
+
+            </article>
+
+            
+
+            <article class="timeline-item right">
+
+                <div class="content">
+
+                    <img
+                    src="./assets/images/hobbieee.png"
+                    alt="Employees working together in a modern office">
+
+                    <h2>2019</h2>
+
+                    <h3>First Office Opened</h3>
+
+                    <p>
+                        The company opened its first official office
+                        and expanded its workforce to support growing demand.
+                    </p>
+
+                </div>
+
+            </article>
+
+           
+
+            <article class="timeline-item left">
+
+                <div class="content">
+
+                    <img
+                    src="./assets/images/hobbieee.png"
+                    alt="Business team receiving an innovation award">
+
+                    <h2>2021</h2>
+
+                    <h3>Innovation Award</h3>
+
+                    <p>
+                        BlueTech received a national innovation award
+                        for developing advanced cloud-based solutions.
+                    </p>
+
+                </div>
+
+            </article>
+
+           
+
+            <article class="timeline-item right">
+
+                <div class="content">
+
+                    <img
+                    src="./assets/images/hobbieee.png"
+                    alt="Global business expansion with international connections">
+
+                    <h2>2023</h2>
+
+                    <h3>Global Expansion</h3>
+
+                    <p>
+                        The company expanded internationally and began
+                        serving clients across multiple countries.
+                    </p>
+
+                </div>
+
+            </article>
+
+          
+
+            <article class="timeline-item left">
+
+                <div class="content">
+
+                    <img
+                    src="./assets/images/hobbieee.png"
+                    alt="Future technology and artificial intelligence concept">
+
+                    <h2>2025</h2>
+
+                    <h3>AI Integration</h3>
+
+                    <p>
+                        BlueTech launched new AI-powered services to
+                        improve automation and digital transformation.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
   <footer class="page-footer">
     <p>
-      Submitted by: <strong>[Your Name]</strong> ·
-      Reg No: <strong>[Your Reg No]</strong> ·
-      Question: <strong>Q[XXX]</strong>
+      Submitted by: <strong>Sumayyah Salum Ali</strong> ·
+      Reg No: <strong>24BIT040</strong> ·
+      Question: <strong>Q 077</strong>
     </p>
     <p>
       <small>
-        © 2026 SUZA · Web Technologies (BCS / BITAM) ·
+        © 2026 SUZA · Web Technologies (BITAM) ·
         <a href="https://www.suza.ac.tz" target="_blank" rel="noopener noreferrer">suza.ac.tz</a>
       </small>
     </p>
